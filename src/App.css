@@ -1,0 +1,17 @@
+body {
+  background: #020631;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  width: 70%;
+}
+
+.task-input {
+  width: 45%;
+  height: 45px;
+}
