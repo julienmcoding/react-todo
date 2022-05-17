@@ -49,13 +49,18 @@ function App() {
         placeholder="Enter your new task"
         autoFocus
       ></input>
-      <button className="btn btn-success m-1 shadow" onClick={handleAddToDo}>
-        Add Todo
-      </button>
-      <button className="btn btn-danger shadow" onClick={handleClearTodos}>
-        Clear Completed Todos
-      </button>
-      <div className="fst-italic text-light">{todos.filter((todo) => !todo.complete).length} left to do</div>
+      <div className="button">
+        <button className="btn btn-success shadow" onClick={handleAddToDo}>
+          Add Todo
+        </button>
+        <button className="btn btn-danger shadow" onClick={handleClearTodos}>
+          Clear Completed Todos
+        </button>
+      </div>
+
+      <div className="fst-italic text-light">
+        {todos.filter((todo) => !todo.complete).length} left to do
+      </div>
     </div>
   );
 }
